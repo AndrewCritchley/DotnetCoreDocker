@@ -1,0 +1,5 @@
+FROM andrewcritchley/dotnetcore:put-tag-here
+
+COPY buildOutput /app
+
+ENTRYPOINT ["dotnet", "ProjectName.dll"]
